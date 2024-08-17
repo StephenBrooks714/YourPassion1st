@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import "./styles/animations.scss";
+import "./styles/styles.scss";
 import { AuthProvider } from '@descope/react-sdk';
 import {
     BrowserRouter,
