@@ -1,0 +1,49 @@
+.animateLeft {
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animateDown {
+  animation-name: down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animateUp {
+  animation-name: up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=animations.css.map */
