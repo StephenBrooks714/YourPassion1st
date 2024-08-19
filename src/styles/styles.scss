@@ -9,3 +9,11 @@
   align-items: center;
   display: flex;
 }
+.bg-light-shadow-transparent-gradient-shadow {
+  background: rgba(244, 244, 244, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 15px;
+  border: 1px solid rgba(244, 244, 244, 0.8);
+}
