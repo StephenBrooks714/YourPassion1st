@@ -1,5 +1,5 @@
 import { useCallback } from 'react'
-
+import CardData from './CardData.jsx'
 import { useDescope, useSession, useUser } from '@descope/react-sdk'
 import { Descope } from '@descope/react-sdk'
 import { getSessionToken } from '@descope/react-sdk';
@@ -26,8 +26,8 @@ const Login = () => {
     }, [logout])
 
     return <>
-        <div className={"container"}>
-            <div className={"row justify-content-center align-items-center"} style={{paddingTop: "70px"}}>
+        <div className={"container-fluid mb-5 pb-3"}>
+            <div className={"row justify-content-center align-items-center"} style={{paddingTop: "60px"}}>
                 <div className={"col-lg-10"}>
                     {!isAuthenticated &&
                         (
@@ -53,11 +53,12 @@ const Login = () => {
                             <>
                                 <div className={"row justify-content-center align-items-center text-center"}
                                      style={{marginTop: "160px"}}>
-                                    <div className={"col-lg-8"}>
-                                        <p className={"h1 mb-2"}>Hello {user.name}</p>
-                                        <p className={"lead mb-2"}>My Private Component</p>
+                                    <div className={"col-lg-12 mb-5 pb-3"}>
+                                        <p className={"display-5 mb-2"}>Hello {user.name}</p>
+                                        <p className={"lead mb-2"}>My Developer Profile</p>
                                         <button className={"btn btn-outline-warning"} onClick={handleLogout}>Logout</button>
                                     </div>
+                                    <CardData/>
                                 </div>
                             </>
                         )
