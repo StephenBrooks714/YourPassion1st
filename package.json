@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@descope/react-sdk": "^2.0.67",
+    "axios": "^1.7.4",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "firebase": "^10.13.0",
