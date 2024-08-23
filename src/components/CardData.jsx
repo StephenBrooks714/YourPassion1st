@@ -4,7 +4,7 @@ export default function CardData(){
     return (
         <>
             {data.map((item) => (
-                <div className="col-lg-3 col-md-6 mb-3" key={item.id}>
+                <div className="col-lg-3 col-md-6 mb-5" key={item.id}>
                     <div className="card">
                         <div className={"card-icon"} style={{marginTop: "-40px"}}>
                             <i className={item.icon}></i>

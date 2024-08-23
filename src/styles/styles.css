@@ -1,11 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+.cursive {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .home-intro {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://everydaypower.com/wp-content/uploads/2020/05/130-Inspirational-pictures-quotes-and-motivational-images.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://keithabraham.com/wp-content/uploads/2018/08/passionate_people_are_extraordinary_header.jpg") no-repeat center center;
   background-size: cover;
-  height: 80vh;
-  color: white;
+  height: 90vh;
+  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.bg-light-shadow-transparent-gradient-shadow {
+  background: rgba(244, 244, 244, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 15px;
+  border: 1px solid rgba(244, 244, 244, 0.8);
+}
+
+.feature-wrapper {
+  margin: -75px auto 40px;
+}
+
+.card-icon {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: auto;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-gradient-blue {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  color: white;
+  border-radius: 50px;
+  padding: 7px 16px;
+  margin: 20px 0.3rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.button-gradient-blue:hover {
+  background: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+  color: white;
+}
+
+.button-gradient-light-blue {
+  background: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+  color: white;
+  border-radius: 50px;
+  padding: 7px 16px;
+  margin: 20px 0.3rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.button-gradient-light-blue:hover {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  z-index: 1;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover:before {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
